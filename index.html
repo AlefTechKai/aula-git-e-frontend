@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
+<html lag="pt-BR">
+<head> 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Gestão</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
+    <link rel="stylesheet" href="css\style.css">
+</head>
 <body>
     <h1 class="destaque">Cadastro de Marcas - h1</h1>
     <h2>Cadastro de Marcas - h2</h2>
@@ -29,73 +27,99 @@
     <table>
         <tr>
             <th>Produto</th>
-            <th>Preço</th>
+            <th>Preço</th> 
         </tr>
         <tr>
             <td>Mouse</td>
             <td>25,00</td>
         </tr>
-        <tr>
+         <tr>
             <td>Teclado</td>
             <td>75,00</td>
         </tr>
-        <tr>
+          <tr>
             <td>Monitor</td>
             <td>950,00</td>
         </tr>
     </table>
 
-
     <h1> Tags semânticas </h1>
     <header> <strong>tag header -</strong> Cabeçalho do site ou de uma seção</header>
     <nav> <strong>tag nav -</strong> Contém links de navegação</nav>
     <main> <strong>tag main -</strong> O conteúdo principal e exclusivo da página </main>
-    <section> <strong>tag section -</strong> Agrupamento genérico de conteúdo relacionado</section>
+    <section> <strong>tag section -</strong>  Agrupamento genérico de conteúdo relacionado</section>
     <article> <strong>tag article -</strong> Conteúdo independente (ex. post de blog)</article>
-    <footer><strong>tag footer -</strong> Rodapé com informações de contato ou copyright</footer>
-    <div><strong>tag div -</strong> Um container genêrico sem valor semântico, usado apenas para fins de stilização.
-    </div>
-    <h1 style="color:aquamarine;">Formulario</h1>
+    <footer><strong>tag footer -</strong>  Rodapé com informações de contato ou copyright</footer>
+    <div><strong>tag div -</strong>  Um container genêrico sem valor semântico, usado apenas para 
+        fins de stilização.
+    </div>   
 
+
+    <h1 style="color:brown;">Formulário</h1>
+  
     <form action="/enviar" method="POST">
-        <!-- TEXTO E EMAIL-->
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <!-- texto e E-mail-->
+         <label for="nome">Nome:</label>
+         <input type="text" id="nome" name="nome" placeholder="Seu nome">
+         <label for="email">E-mail</label>
+         <input type="email" id="email" name="email" placeholder="Seu e-mail">
 
-        <!--Selecao unica radio-->
-        <p>genero</p>
-        <input type="radio" id="masc" name="genero" value="m">
-        <label for="masc">Masculino</label>
-        <input type="radio" id="fem" name="genero" value="f">
-        <label for="fem">Feminino</label>
-        <br>
-        <!--Meu dropdown(combo)-->
-        <label for="estado">Estado</label>
-        <select name="estado" id="estado">
+         <!--Seleção Única (Radio)-->
+         <p>Gênero</p> 
+         <div class="caixa">
+            <input type="radio" id="masc" name="genero" value="m">
+            <label for="masc">Masculino</label>
+            <input type="radio" id="fem" name="genero" value="f">
+            <label for="fem">Feminino</label>
+         </div>
+         
+         <!-- Meu Dropdown (combo) -->
+        <label for="estado"><p>Estado</p></label>
+        <select id="estado" name="estado">
             <option value="pr">Paraná</option>
-            <option value="sc">Santa Catarina</option>
-            <option value="rs">Rio Grande do Sul</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
         </select>
-        <br><br>
-        <!--Caixa de selecao (checkbox)-->
+        <br> <br>
+        <!--Caixa de seleção (checkbox)-->
         <input type="checkbox" id="news" name="news">
-        <label for="news">Deseja receber novidades?</label>
-        <br>
+        <label for="news">Desejo receber novidades</label>
+         <br>
         <input type="checkbox" id="contrato" name="contrato">
-        <label for="contrato">confirmo que li o contrato</label>
-        <br>
+        <label for="contrato">Confirmo que li o contrato</label>
+         <br>
         <input type="checkbox" id="acordo" name="acordo">
-        <label for="acordo">Estou de acordo com as informacoes sobre LGPD</label>
-        <br>
-        <!--BOTÕES-->
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
+        <label for="acordo">Estou de acordo com as informações sobre LGPD</label>
+         <br>
+        <!--Botões-->
+        <div class="botoes">
+        <button type="submit" id="botao-enviar">Enviar Dados</button>
+        <button type="reset" id="botao-limpar">Limpar</button>
+        </div>
 
     </form>
+
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <button id="botao">Clique Aqui</button>
+    <p id="mensagem"></p>
+
+    <script>
+        const botao = document.getElementById('botao');
+        const mensagem = document.getElementById('mensagem');
+
+        botao.addEventListener("click", function(){
+            mensagem.textContent = "Olá, boa noite";
+        });
+    </script>
 
 </body>
 
 </html>
+
+

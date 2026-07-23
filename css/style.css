@@ -23,4 +23,90 @@ p {
 #botao-limpar {
     background-color:rgb(220, 80, 20);
     color: white;
+    
+}
+
+.caixa {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 10px;
+    
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 12px;
+    text-align: left;    
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 10 px;
+}
+
+tr :hover{
+    background-color: #f5f5f5;
+}
+
+form {
+    border: 2px solid black;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color:#f9f9f9;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Esta pegando a cor do id que esta configurado acima */
+button {
+    background-color: #9c2de6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover{
+    background-color: #45a040;
+}
+
+.botoes {
+    background-color: #4e1d9c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.container {
+    background-color: #45a040;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.item {
+    flex:1;
+    margin: 5px;
+    background: #e1e1e1;
 }
