@@ -1,0 +1,26 @@
+/* seletor de tag */
+/* Aplica a todas as tags <p> do site */
+p {
+    color: #1c10c5;
+    list-style: 1.5;
+}
+
+/* Seletor de classe */
+/* Pode ser usado em <h1 class="destaque"> ou <span class="destaque"> */
+.destaque {
+    background-color: #fef08a;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Seletor por id */
+/* Aplica apens ao elemento com id="botao-enviar" */
+#botao-enviar {
+    background-color: #2563eb;
+    color: white;
+}
+
+#botao-limpar {
+    background-color:rgb(220, 80, 20);
+    color: white;
+}
